@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --beige-1: #F8F0E5;
+    --beige-2: #EADBC8;
+    --beige-3: #DAC0A3;
+    --navy-1:  #0F2C59;
+    --navy-2:  #170F59;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*body*/
+body{
+    background-color:  var(--beige-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.titel{
+    margin: 50px;
+    font-size: 40px;
+}
+
+.app{
+    background-color: var(--beige-1);
+    font-size: 25px;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+
+.input #input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: var(--beige-2);
+}
+
+.input{
+    width: 100%;
+    display: flex;
+}
+
+.input #submit{
+    width: 20%;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+    background-color: var(--navy-1);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.list{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list ul{
+    width: 100%;
+    list-style: none;
+    text-align: start;
+}
+
+.list li{
+    height: 20px;
+    margin: 10px;
+}
+
+.list li span{
+    font-size: 20px;
+    color: var(--navy-2);
+}
+.list li input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 0;
+}
+
+.list ul li input:checked ~ span{
+    text-decoration: line-through;
+    color: var(--beige-3);
+}
